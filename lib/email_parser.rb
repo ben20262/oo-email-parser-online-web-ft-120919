@@ -10,6 +10,6 @@ class EmailAddressParser
   end
 
   def parse
-    @addresses.chomp(",").split(" ")
+    @addresses.delete(",").split(" ")
   end
 end
